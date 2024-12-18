@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Healthcare Clinic</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bmi-calculator">BMI Calculator</a></li>
+                <li><a href="#contact-form">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>About Us</h2>
+        <p>We think extraordinary people deserves extraordinary care.<br>
+         Visit us for consultations, treatments, and wellness programs.</p>
+    </section>
+
+    <section id="bmi-calculator">
+        <h2>BMI Calculator</h2>
+        <p>Check your Body Mass Index (BMI):</p>
+        <label for="weight">Weight in (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+        
+        <label for="height">Height in (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height" required>
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <p id="bmi-result"></p>
+    </section>
+
+    <section id="contact-form">
+        <h2>Fill out the form below for an appointment</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name " required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter Message" rows="5" ></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
